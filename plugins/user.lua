@@ -27,8 +27,4 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
-  {
-    "windwp/nvim-ts-autotag",
-    event = "User AstroFile",
-  },
 }
