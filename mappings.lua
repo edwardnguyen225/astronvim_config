@@ -22,9 +22,24 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    ["<C-h>"] = { "<cmd>TmuxNavigateLeft<cr>", desc = "window left" },
+    ["<C-l>"] = { "<cmd>TmuxNavigateRight<cr>", desc = "window right" },
+    ["<C-j>"] = { "<cmd>TmuxNavigateDown<cr>", desc = "window down" },
+    ["<C-k>"] = { "<cmd>TmuxNavigateUp<cr>", desc = "window up" },
+
+    -- Change buffers
+    L = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    H = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    -- [] = false,
   },
 }

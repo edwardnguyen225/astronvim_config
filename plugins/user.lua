@@ -23,4 +23,12 @@ return {
       { "<leader>fT", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in telescope" },
     },
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    event = "User AstroFile",
+  },
 }
