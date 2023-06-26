@@ -18,7 +18,9 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "nightfox",
+  -- colorscheme = "nightfox",
+  -- colorscheme = "tokyonight-storm",
+  -- colorscheme = "gruvbox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -69,5 +71,14 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    -- Set the background to be transparent
+    -- vim.cmd "hi Normal guibg=NONE ctermbg=NONE"
+    -- vim.cmd "hi CursorColumn cterm=NONE ctermbg=NONE ctermfg=NONE"
+    -- vim.cmd "hi CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE"
+    -- vim.cmd "hi CursorLineNr cterm=NONE ctermbg=NONE ctermbg=NONE"
+    -- vim.cmd "hi clear LineNr"
+    -- vim.cmd "hi clear SignColumn"
+    -- vim.cmd "hi clear StatusLine"
   end,
 }
