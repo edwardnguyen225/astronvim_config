@@ -17,6 +17,12 @@ return {
       end,
       desc = "Pick to close",
     },
+
+    ["<leader>ll"] = {
+      "\"ayiwoconsole.log('DEBUG <c-r>=expand('%:t:r')<cr> —> <C-R>a:', <C-R>a);<Esc>",
+      desc = "Console log",
+    },
+
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
